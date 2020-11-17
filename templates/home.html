@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}"/>
+
+    <title>Campeonato de Hearthstone</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body id="page">
+    <!-- <NavBar> -->
+    <center><div id="navBar" class="row">
+            <div id="navBar-content" class="col-6 col-md-4"><img style="margin-left: 160px; margin-top: -5px;" id="perfil" src="{{ url_for('static', filename='img/logo.png')}}"></div>
+            <div id="titulo" class="col-6 col-md-4">
+            </div>
+            <div id="navBar-content" class="col-6 col-md-4"><img id="perfil" src="{{ url_for('static', filename='img/profile.png')}}"></div>
+    </div></center>
+    <!-- </NavBar> -->
+    
+    <!-- <Corpo> -->
+        <main>
+            <center><div id="nav-content" class="col-6 col-md-4">
+                <a href="home">Rancking</a>
+                <a href="competidores">Herois</a>
+                <a href="cadastro">Cadastro</a>
+            </div></center>
+
+                    <div id="rancking">
+                        <h1>Classificação</h1>
+                        <b><p><img id="participante1" src="{{ url_for ('static', filename='img/participante1.png')}}" width="930"></p></b>
+                        <b><p><img id="participante2" src="{{ url_for ('static', filename='img/participante2.png')}}" width="690"></p></b>
+                        <b><p><img id="participante3" src="{{ url_for ('static', filename='img/participante3.png')}}" width="690"></p></b>
+                        <b><p><img id="participante4" src="{{ url_for ('static', filename='img/participante4.png')}}" width="690"></p></b>
+                    </div>
+<br><br>
+            <footer>
+                Todos os direitos reservados 2020 &copy;
+            </footer>
+    </main>
+
+    <!-- </Corpo> -->
+</body>
+</html>
